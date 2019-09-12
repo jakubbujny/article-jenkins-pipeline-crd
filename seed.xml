@@ -31,13 +31,13 @@
         scm {
           git {
             remote {
-              url(&apos;https://github.com/jakubbujny/article-${project}.git&apos;)
+              url("https://github.com/jakubbujny/article-${project}.git")
             }
-            branch(&apos;*/master&apos;)
+            branch("*/master")
           }
         }
         triggers {
-        	scm(&apos;* * * * *&apos;)
+        	scm("* * * * *")
     	}
         lightweight()
         scriptPath(&quot;Jenkinsfile.groovy&quot;)
